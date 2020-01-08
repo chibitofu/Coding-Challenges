@@ -1,0 +1,324 @@
+Array Problems
+1. Find the element that appears once in a sorted array where all other elements appear twice one after another. Find that element in 0(logn) complexity.
+Input:   arr[] = {1, 1, 3, 3, 4, 5, 5, 7, 7, 8, 8}
+
+Output:  4
+
+2. A magic index in an array A[0…n-1] is defined to be an index such that A[i] = i. Given a sorted array of distinct integers, write a method to find a magic index if one exists, in an array A. FOLLOW UP: What if the values are not distinct?
+
+3. Given a sorted array of n integers that has been rotated an unknown number of times, write code to find an element in the array. You may assume that the array was originally sorted in increasing order.
+
+4. Given an array that contains numbers from 1 to n-1 and exactly 1 duplicate, find that duplicate.
+
+5. Search an element in an array where difference between adjacent elements is 1.
+For example: arr[] = {8, 7, 6, 7, 6, 5, 4, 3, 2, 3, 4, 3}
+
+Search for 3 and Output: Found at index 7
+
+6. Given an array of numbers, split the array into two where one array contains the sum of n-1 numbers and the other array with all the n-1 elements.
+
+Stack Problems
+1. Find missing parenthesis in a given expression – 2 * ( 3 + 5(sasdfasdfasd)
+
+2. Evaluate an expression given only single digits and only 2 operators * and +.
+
+3. Reverse a stack and put the reversed value back in the same stack. You can use only one other stack and a temp variable.
+
+String Problems
+1. Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+
+2. Given two strings, write a method to decide if one is a permutation of the other?
+
+3. Write a method to replace all spaces in a string with ‘%20’.
+
+4. Implement a method to perform a basic string compression using the counts of repeated characters. For example, the string aabccccaaa would become a2b1c4a3. If the compressed string would not become smaller than the original string, your method should return the original string.
+
+5. Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.
+
+6. Given two sequences, print longest common subsequence
+    LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.
+
+    LCS for input Sequences “AGGTAB” and “GXTXAYB” is “GTAB” of length 4.
+
+Linked List Problems
+1. Write an algorithm to determine if a linkedlist is a palindrome
+
+2. Write an algorithm to determine if a linkedlist is circular. FOLLOW UP: Determine where the circle meets.
+
+3. Clone a linked list with a random pointer.
+
+4. Write code to remove duplicates from an unsorted linked list. Follow up: How would you solve it if temporary buffer is not allowed?
+
+5. Implement an algorithm to find the kth to the last element of a singly linked list
+
+6. Implement an algorithm to delete a node a singly linked list, given only access to that node.
+
+7. Write code to partition a linkedlist around a value x, such that all nodes less than x come before all nodes great than or equal to x. 
+
+8. Reverse a linked list – iteratively and recursively
+
+9. Given a singly linked list which has data sorted in ascending order, construct a balanced BST.
+
+Array Set 2
+1. Write an efficient program to find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum.
+ 
+2. You are given a list of n-1 integers and these integers are in the range of 1 to n. There are no duplicates in list. One of the integers is missing in the list. Write an efficient code to find the missing integer.
+
+3.Given an unsorted array of nonnegative integers, find a continous subarray which adds to a given number.
+ 
+Examples :
+
+Input: arr[] = {1, 4, 20, 3, 10, 5}, sum = 33
+
+Ouptut: Sum found between indexes 2 and 4
+
+ 
+
+Input: arr[] = {1, 4, 0, 0, 3, 10, 5}, sum = 7
+
+Ouptut: Sum found between indexes 1 and 4
+
+ 
+
+Input: arr[] = {1, 4}, sum = 0
+
+Output: No subarray found
+
+ 
+
+4. Given an unsorted array of integers, find a subarray which adds to a given number. If there are more than one subarrays with sum as the given number, print any of them.
+
+Examples:
+
+Input: arr[] = {1, 4, 20, 3, 10, 5}, sum = 33
+
+Ouptut: Sum found between indexes 2 and 4
+
+ 
+
+Input: arr[] = {10, 2, -2, -20, 10}, sum = -10
+
+Ouptut: Sum found between indexes 0 to 3
+
+ 
+
+Input: arr[] = {-10, 0, 2, -2, -20, 10}, sum = 20
+
+Ouptut: No subarray with given sum exists
+
+ 
+
+5. Write a program to sort an array of 0's,1's and 2's in ascending order.
+
+6. Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. For example, in an array A:
+Example :
+
+Input : A[] = {-7, 1, 5, 2, -4, 3, 0}
+
+Output : 3
+
+3 is an equilibrium index, because:
+
+A[0] + A[1] + A[2]  =  A[4] + A[5] + A[6]
+
+Write a function int equilibrium(int[] arr, int n); that given a sequence arr[] of size n, returns an equilibrium index (if any) or -1 if no equilibrium indexes exist.
+
+ 
+
+7. Write a program to print all the LEADERS in the array. An element is leader if it is greater than all the elements to its right side. And the rightmost element is always a leader. For example int the array {16, 17, 4, 3, 5, 2}, leaders are 17, 5 and 2.
+
+8. Given an array and a number k where k is smaller than size of array, we need to find the k’th smallest element in the given array. It is given that ll array elements are distinct.
+ 
+
+Examples:
+
+ 
+
+Input: arr[] = {7, 10, 4, 3, 20, 15}
+
+       k = 3
+
+Output: 7
+
+ 
+
+Input: arr[] = {7, 10, 4, 3, 20, 15}
+
+       k = 4
+
+Output: 10
+
+ 
+
+9. Given a 2D array, print it in spiral form. See the following examples.
+Examples:
+
+Input:
+
+        1    2   3   4
+
+        5    6   7   8
+
+        9   10  11  12
+
+        13  14  15  16
+
+Output:
+
+1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+
+ 
+
+ 
+
+Input:
+
+        1   2   3   4  5   6
+
+        7   8   9  10  11  12
+
+        13  14  15 16  17  18
+
+Output:
+
+1 2 3 4 5 6 12 18 17 16 15 14 13 7 8 9 10 11
+
+10. Print the elements of an array in the decreasing frequency if 2 numbers have same frequency then print the one which came first.
+ 
+
+Examples:
+
+ 
+
+Input:  arr[] = {2, 5, 2, 8, 5, 6, 8, 8}
+
+Output: arr[] = {8, 8, 8, 2, 2, 5, 5, 6}
+
+ 
+
+Input: arr[] = {2, 5, 2, 6, -1, 9999999, 5, 8, 8, 8}
+
+Output: arr[] = {8, 8, 8, 2, 2, 5, 5, 6, -1, 9999999}
+
+String set 2
+1. Given a string S, find the longest palindromic substring in S.
+Input: "babad"
+
+Output: "bab"
+
+Note: "aba" is also a valid answer.
+
+2.Given a string, recursively remove adjacent duplicate characters from string. The output string should not have any adjacent duplicates. See following examples.
+Input:  azxxzy
+
+Output: ay
+
+First "azxxzy" is reduced to "azzy". The string "azzy" contains duplicates, so it is further reduced to "ay". 
+
+Input: caaabbbaacdddd
+
+Output: Empty String 
+
+Input: acaaabbbacdddd
+
+Output: acac
+
+3. Given two strings, the task is to find if a string ('a') can be obtained by rotating another string ('b') by two places.
+Examples:
+Input : a = "amazon"         b = "azonam"  // rotated anti-clockwise
+
+Output : True 
+
+Input : a = "amazon"        b = "onamaz"  // rotated clockwise
+
+Output : True
+
+4. Given an string in roman no format (s)  your task is to convert it to integer .
+Example:
+Input
+2
+V
+III 
+Output
+5
+3
+
+ 
+
+5. Given two strings ‘X’ and ‘Y’, find the length of the longest common substring.
+ 
+
+Input : X = "abcdxyz", y = "xyzabcd"
+
+Output : 4
+
+The longest common substring is "abcd" and is oflength 4. 
+
+Input : X = "zxabcdezy", y = "yzabcdezx"
+
+Output : 6
+
+The longest common substring is "abcdez" and is oflength 6.
+
+6. Given two string str1 and str2, find the shortest string that has both str1 and str2 as subsequences.
+
+Examples:
+
+Input: str1 = “geek”, str2=”eke”
+
+Output: “geeke”
+
+ 
+
+Input: str1 = “AGGTAB”, str2=”GXTXAYB”
+
+Output: “AGXGTXAYB”
+
+7. Given a string, find length of the longest substring with all distinct characters.  For example, for input "abca", the output is 3 as "abc" is the longest substring with all distinct characters.
+
+8. Your task  is to implement the function atoi. The function takes a string(str) as argument and converts it to an integer and returns it.
+
+9. Your task  is to implement the function strstr. The function takes two strings as arguments(s,x) and  locates the occurrence of the string x in the string s. The function returns and integer denoting  the first occurrence of the string x .
+
+10. Given a array of Nstrings, find the longest common prefix among all strings present in the array.
+Input: apple ape April
+
+Output: ap
+
+11. Design a URL shortner like bit.ly
+
+Linked List set 2
+1. Given a singly linked list, find middle of the linked list. For example, if given linked list is 1->2->3->4->5 then output should be 3.
+If there are even nodes, then there would be two middle nodes, we need to print second middle element. For example, if given linked list is 1->2->3->4->5->6 then output should be 4.
+
+2. Given a singly linked list, rotate the linked list counter-clockwise by k nodes. Where k is a given positive integer smaller than or equal to length of the linked list. For example, if the given linked list is 10->20->30->40->50->60 and k is 4, the list should be modified to 50->60->10->20->30->40.
+
+3. Given a linked list, write a function to reverse every k nodes (where k is an input to the function).If a linked list is given as 1->2->3->4->5->6->7->8->NULL and k = 3 then output will be 3->2->1->6->5->4->8->7->NULL.
+
+4. Given a linked list, check if the the linked list has a loop. Linked list can contain self loop.
+
+5. Given a linked list, the task is to find the n'th node from the end.
+
+6. Given two linked lists sorted in ascending order. Merge them in-place and return head of the merged list. For example, if first list is 10->20->30 and second list is 15->17, then the result list should be 10->15->17->20->30.
+It is strongly recommended to do merging in-place using O(1) extra space.
+
+7. Given a Linked List where every node represents a linked list and contains two pointers of its type:
+(i) anext pointer to the next node
+(ii) a bottom pointer to a linked list where this node is head.
+
+You have to flatten the linked list to a single linked list which is
+For Ex: Shown below is a given linked list
+
+5 -> 10 -> 19 -> 28 | | | | V V V V 7 20 22 35 | | | V V V 8 50 40 | | V V 30 45
+
+and after flattening it, the sorted linked list looks like:
+
+5->7->8->10->19->20->22->28->30->35->40->45->50
+
+The node structure has 3 fields as mentioned. A next pointer, a bottom pointer and a data part.
+
+8. Given a singly linked list, write a function to swap elements pairwise. For example, if the linked list is 1->2->3->4->5 then the function should change it to 2->1->4->3->5, and if the linked list is 1->2->3->4->5->6 then the function should change it to 2->1->4->3->6->5.
+9. Given two numbers represented by two lists, write a function that returns sum list. The sum list is list representation of addition of two input numbers.
+Suppose you have two linked list 5->4 ( 4 5 )and 5->4->3( 3 4 5) you have to return a resultant linked list 0->9->3 (3 9 0).
+
+10. Given a singly linked list of integers, Your task is to complete the function isPalindrome that returns true if the given list is palindrome, else returns false.
